@@ -21,7 +21,7 @@ binary is included alongside for when strict Kubernetes compliance is necessary.
 
 API_URL: Openshift Console > Menu > Copy Login command
 
-Detailed Info: [OpenShift Docs](https://docs.openshift.com/container-platform/4.11/cli_reference/openshift_cli/getting-started-cli.html).
+Detailed Info: [OpenShift Docs](https://docs.openshift.com/container-platform/4.11/cli_reference/openshift_cli/getting-started-cli.html)
 
 
 ## Create Azure Redhat Openshift Cluster
@@ -46,7 +46,7 @@ k8s/deployment.yaml
 k8s/service.yaml
 ```
 
-5. Clean Up
+4. Clean Up
 ```bash
 ./deelte-aro-cluster.sh
 ```
