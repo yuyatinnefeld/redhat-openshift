@@ -20,3 +20,34 @@ OC Tool Version: https://mirror.openshift.com/pub/openshift-v3/clients/
 ## Push OC Image
     docker tag docker_oc yuyatinnefeld/openshift_cli
     docker push yuyatinnefeld/openshift_cli
+
+## Use OC
+
+### Service Account
+```bash
+SERVICE_ACCOUNT=yuya
+
+# create a service account
+oc create sa $SERVICE_ACCOUNT
+
+# or option 2
+oc apply -f serviceaccount.yaml
+
+# list service accounts
+oc get sa
+
+# check details
+oc describe sa $SERVICE_ACCOUNT
+
+# update user role
+oc apply -f role.yaml
+
+# check the API Token
+oc describe secret yuya-token-kdzn5 -n $SERVICE_ACCOUNT
+
+# use service account with the API Token
+oc login --token=eyJhbGciO...
+
+# delete sa
+oc delete sa $SERVICE_ACCOUNT
+```
