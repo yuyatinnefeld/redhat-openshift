@@ -4,12 +4,9 @@
 This project provides a structured approach to getting familiar with Azure Red Hat OpenShift (ARO) through hands-on steps and explanations. It emphasizes the usage of the OpenShift CLI (oc) for managing Kubernetes and OpenShift clusters, highlighting its advantages over kubectl and providing clear instructions for installation and usage. The project walks users through essential steps such as creating an ARO cluster, connecting to it, deploying Kubernetes resources via the OpenShift UI, and integrating HashiCorp Vault. Additionally, it offers scripts for cleaning up resources after experimentation. Overall, it serves as a practical guide for learning ARO deployment and management.
 
 ## OpenShift CLI (oc)
-The OpenShift client `oc` simplifies working with Kubernetes and OpenShift
-clusters, offering a number of advantages over `kubectl` such as easy login,
-kube config file management, and access to developer tools. The `kubectl`
-binary is included alongside for when strict Kubernetes compliance is necessary.
+[Docs](cli-co/README.md)
 
-## Install oc
+### Install oc
     docker run -it --rm yuyatinnefeld/openshift_cli /bin/sh
 
 ### Use oc

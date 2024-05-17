@@ -1,0 +1,14 @@
+FROM frolvlad/alpine-glibc:latest
+
+ENV CRC_LINUX_ZIP crc-linux-amd64.tar.xz
+ENV CRC_LINUX_PKG crc-linux-*-amd64/crc
+
+COPY ./$CRC_LINUX_ZIP ./$CRC_LINUX_ZIP
+
+RUN tar xvf $CRC_LINUX_ZIP && rm ./$CRC_LINUX_ZIP
+RUN cp $CRC_LINUX_PKG /usr/local/bin
+RUN export PATH=$PATH:$HOME/bin/crc
+
+# ADDED: Resolve issue x509 oc login issue
+RUN apk add --update ca-certificates
+
