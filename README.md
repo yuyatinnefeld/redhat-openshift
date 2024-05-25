@@ -20,6 +20,10 @@ API_URL: Openshift Console > Menu > Copy Login command
 
 Detailed Info: [OpenShift Docs](https://docs.openshift.com/container-platform/4.11/cli_reference/openshift_cli/getting-started-cli.html)
 
+## SCC vs OPA
+Security Context Constraints (SCC) and Open Policy Agent (OPA) are both mechanisms used to enforce security policies in OpenShift, but they serve different purposes and operate at different levels of the cluster.
+
+- SCCs are ideal for straightforward, security-focused constraints within OpenShift, while OPA provides a flexible, powerful framework for implementing a wide variety of policies across diverse environments.
 
 ## Create Azure Redhat Openshift Cluster
 
