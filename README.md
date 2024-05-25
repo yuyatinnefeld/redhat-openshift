@@ -43,6 +43,9 @@ k8s/deployment.yaml
 k8s/service.yaml
 ```
 
+4. Build Image
+
+
 4. Clean Up
 ```bash
 ./deelte-aro-cluster.sh
